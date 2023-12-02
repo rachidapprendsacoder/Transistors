@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>  Algèbre de Boole </title>
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body >
+
+
+<table id="tb1">
+<tr>
+
+<td id="td1">
+<a href="Page d'accueil.html"> <strong>Project</strong> </a></a>
+</td>
+
+<td id="vide">
+</td>
+
+<td id="td1">
+<a href="Les Transistors.html" > <strong> I. Les Transistors </strong></a>
+</td>
+
+<td id="vide">
+</td>
+
+<td id="td1">
+<a href="Les portes logiques.html"> <strong>II. Les portes logiques</strong></a>
+</td>
+
+<td id="vide">
+</td>
+
+<td id="td1">
+<a href="Composition d'un ordinateur.html"> <strong>IV. Composition d’un ordinateur </strong></a>
+</td>
+</tr>
+</table>
+
+
+
+
+<p>
+<h1>Table de vérité</h1>
+L'algèbre de Boole (du nom du mathématicien anglais Georges Boole 1815 - 1864) permet de modéliser des raisonnements logiques, en exprimant l'état de la ou des sorties en fonction d'un certain nombre de paramètres. <br>
+La table de vérité d’un circuit caractérise une fonction logique, qui exprime les sorties en fonction des entrées et des trois opérations de base : <br>
+<li>AND</li>
+<li>OR</li>
+<li>NO</li>
+
+Maintenant, voyons  comment écrire l'équation d'une table. Dans un premier temps, il est plus simple de s’occuper des sorties à 1, et de ne pas se préoccuper
+ des sorties à 0, sauf dans le cas où ces sorties sont moins fréquentes que les entrées à 1. <br>
+L’expression de la sortie sera une somme de produit, avec le nombre de termes égal à celui des sorties qui valent 1, et le nombre des facteurs de chaque terme
+ égal au nombre d'entrées.<br>
+On exprime donc chacune des entrées de formes génériques : si elle vaut 0 alors elle est barrée, si elle vaut 1 on la garde telle quelle.  
+
+<table>
+	<tr>
+		<td>A</td>
+		<td>B</td>
+		<td>S</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+	</tr>
+</table> <br>
+S = ĀB + AB̄  <br>
+On utilise ensuite les lois de composition liées à l'algèbre de Boole, (associativité, commutativité, lois de de Morgan, etc), pour simplifier l'expression de S : <br>
+S = A ⊕ B <br>
+Il s’agit donc d’une porte XOR.<br>
+Voici la table de vérité d’un additionneur 2 bits :<bR>
+<table>
+	<tr>
+		<td>A</td>
+		<td>B</td>
+		<td>Ci</td>
+		<td>S</td>
+		<td>Ci+1</td>
+		
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	</tr>
+	<tr>
+		
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+</table> 
+On exprime les sorties en fonction des entrées comme vu précédemment.<br>
+<img src="image.png" alt="équation"><br>
+On modélise enfin la fonction à l'aide d'un circuit, le passage entre l'un et l'autre étant encore une fois fait de façon logique.
+<img src="circuit.jpeg" alt="circuit !"> <br>
+Une fois qu'on a un additionneur deux bits, on peut en faire succéder d'avantages et ainsi obtenir un additionneur pouvant avoir en entrée beaucoup plus de bits.
+ (image add8bit Nhat Minh)
+<br>
+<h1>Tableau de Karnaugh</h1>
+Le tableau de Karnaugh est une autre version de la  table de vérité, la différence étant  l'agencement des 0 et des 1 et également la taille du tableau. En effet,
+ un tableau de Karnaugh est plus pratique qu'une table de vérité car est à double entrée. Verticalement nous avons les combinaisons possibles pour une, deux, trois 
+ ou même plus d'entrées, idem horizontalement. L'ordre des combinaisons possibles est fait de telle sorte à ce que d'une colonne à l'autre il n'y ait qu'un changement d'entrée. Voyons un petit exemple :
+ <table>
+	<tr>
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+		<td>D</td>
+		<td>S</td>
+		
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	</tr>
+	<tr>
+		
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+</table> 
+ On remarque que cette table est plutôt longue, alors on la transforme en un tableau de Karnaugh. Horizontalement, on a les combinaisons AB, et verticalement les combinaisons CD, avec dans le tableau les résultats en sortie.
+ <table>
+ 	<tr>
+		<td>AB/CD</td>
+		<td>00</td>
+		<td>01</td>
+		<td>11</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>00</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>01</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+</table>
+ 
+ Maintenant que nous avons notre tableau de Karnaugh, nous pouvons encore retrouver l'équation du circuit. Pour cela on regroupe les sorties à 1 par paquet de puissance de 2. (colorier les 4 1 en carrée du milie, et les 4 1 en ligne d'une couleur différentes) 
+  <table>
+ 	<tr>
+		<td>AB/CD</td>
+		<td>00</td>
+		<td>01</td>
+		<td>11</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>00</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		
+	</tr>
+	<tr>
+		<td>01</td>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+</table>
+S sera égale à une somme, cette fois en fonction des paquets qu'on a réalisés. Intéressons nous au 1er paquet d'un point de vue horizontal. On voit que l'entrée A passe de 0 à 1 (01 --> 11). On ne tient donc plus compte de A. B reste à 1, et donc on retient B. Maintenant, regardons ce même paquet d'un point de vue vertical. On voit que l'entrée C varie (01 --> 11) et l'entrée D reste la même (à 1). On a notre premier terme, qui est le produit de ce que nous avons retenu horizontalement et verticalement. Donc pour l'instant S = BD.  <br>
+Allons voir le second paquet. D'un point de vue horizontal les deux entrées A et B varient, donc on en tient pas compte. Par contre, verticalement, C et D restent dans les mêmes états (11). Donc on écrit S = BD + CD. 
+
+</p>
+
+</body>
+</html>
