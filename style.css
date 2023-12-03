@@ -107,6 +107,13 @@ h1{
     box-shadow: 1px 1px 1px;
     display : block;
 }
+.norm3{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 1px;
+    display : block;
+}
 
 #table-principale{
     background: rgb(240, 248, 255);
