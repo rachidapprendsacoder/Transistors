@@ -1,4 +1,4 @@
-<html>
+<html lang="fr">
 <head>
 <meta charset="utf-8" />
 <title>  Les portes logiques </title>
@@ -6,45 +6,42 @@
 </head>
 
 <body >
-<table id="tb1">
-<tr>
 
-<td id="td1">
-<a href="Page d'accueil.html"> <strong>Project</strong> </a></a>
-</td>
 
-<td id="vide">
-</td>
+	<header> <a href="Page d'accueil.html">DOCUMENTATION </a>    <a href = "./web/edit.html">EDITEUR BOOLEEN</a>
+        <a href = "./index.html">CREATION DU SITE</a></header>
 
-<td id="td1">
-<a href="Les Transistors.html" > <strong> I. Les Transistors </strong></a>
-</td>
+	<table  id="tabl-principale">
+            <td id = "hypertext-interface"> 
+                <onglet>• Documentation :</onglet>
+                <div>&nbsp; <a href="Page d'accueil.html">Accueil</a><br>
+                    &nbsp; <a href="Les Transistors.html" >Les Transistors</a><br>
+                    &nbsp; <a href="Les portes logiques.html">Portes Logiques</a><br>
+                    &nbsp; <a href="Algèbre de Boole.html">Algèbre de Boole</a><br>
+                    &nbsp; <a href="Composition d'un ordinateur.html">Les Ordinateurs</a><br><hr>
+                </div>
+                <onglet>• Editeur Booléen :</onglet>
+                <div>&nbsp; <a href = "./index.html">Editeur Booléen</a><br>
+                <div>&nbsp; <a href = "./index.html">En Détaille</a><br><hr>
+                </div>
+                <onglet>• Création du Site :</onglet>
+                <div>&nbsp; <a href = "./index.html">Répartition du Travail</a><br>
+                &nbsp; <a href = "./index.html">Explication du code</a><br>
+                </div>
+            </td>
 
-<td id="vide">
-</td>
-
-<td id="td1">
-<a href="Algèbre de Boole.html"><strong> III. Algèbre de Boole </strong></a>
-</td>
-
-<td id="vide">
-</td>
-
-<td id="td1">
-<a href="Composition d'un ordinateur.html"> <strong>IV. Composition d’un ordinateur </strong></a>
-</td>
-</tr>
-</table>
-
-<p>
+<td id="contenu">
+<h1>LES PORTES LOGIQUES</h1>
+<div class = "norm1">
 Les portes logiques sont des petits circuits qui réalisent des opérations booléennes, et qui sont composées de transistors. 
 NO 
-<table>
-	<tr>
-		<td id="vo">A</td>
-		<td>S</td>
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>S</th>
 
-	</tr>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
 		<td>1</td>
@@ -53,17 +50,19 @@ NO
 		<td>1</td>
 		<td>0</td>
 	</tr>
+	</tbody>
 	<img src="photos portes logiques/NOT.png" alt="porte not">
 </table>
 (elle inverse l’entrée et la sortie) <br><br>
 <img src="photos portes logiques/AND.jpg">
 AND
-<table>
-	<tr>
-		<td id="vo">A</td>
-		<td>B</td>
-		<td>S</td>
-	</tr>
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
 		<td>0</td>
@@ -84,6 +83,7 @@ AND
 		<td>1</td>
 		<td>1</td>
 	</tr>
+	</tbody>
 	
 </table>
 (il y a 1 en sortie si et seulement si les deux entrées sont à 1) <br><br>
@@ -91,44 +91,54 @@ AND
 	<img src="photos portes logiques/NAND.jpg">
 
 NAND
-<table>
-	<tr>
-		<td>A</td>
-		<td>B</td>
-		<td>S</td>
-	</tr>
-	<tr>
-		<td>0</td>
-		<td>0</td>
-		<td>1</td>
-	</tr>
+
+
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
-		<td>1</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>1</td>
 		<td>0</td>
 		<td>1</td>
 	</tr>
 	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	<tr>
 		<td>1</td>
 		<td>1</td>
 		<td>0</td>
 	</tr>
+	</tbody>
+	
 </table>
+
+
+
  (cette porte inverse les sorties de la porte AND) <br><br>
  
      <img src="photos portes logiques/OR.jpg">
  
 OR
-<table>
-	<tr>
-		<td>A</td>
-		<td>B</td>
-		<td>S</td>
-	</tr>
+
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
 		<td>0</td>
@@ -137,30 +147,37 @@ OR
 	<tr>
 		<td>0</td>
 		<td>1</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>0</td>
 		<td>1</td>
 	</tr>
 	<tr>
 		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
 		<td>1</td>
 		<td>1</td>
 	</tr>
+	</tbody>
+	
 </table>
+
+
 (il y a 1 en sortie si l’une des deux entrée est à 1, ou les deux) <br><br>
 
      <img src="photos portes logiques/NOR.png">
 
 NOR 
-<table>
-	<tr>
-		<td>A</td>
-		<td>B</td>
-		<td>S</td>
-	</tr>
+
+
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
 		<td>0</td>
@@ -181,18 +198,25 @@ NOR
 		<td>1</td>
 		<td>0</td>
 	</tr>
+	</tbody>
+	
 </table>
+
+
+
 (inverse de la porte OR) <br><br>
 
      <img src="photos portes logiques/XOR.png">
 
 XOR
-<table>
-	<tr>
-		<td>A</td>
-		<td>B</td>
-		<td>S</td>
-	</tr>
+
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
 		<td>0</td>
 		<td>0</td>
@@ -201,37 +225,43 @@ XOR
 	<tr>
 		<td>0</td>
 		<td>1</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>0</td>
 		<td>1</td>
 	</tr>
 	<tr>
 		<td>1</td>
+		<td>0</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>1</td>
 		<td>1</td>
 		<td>0</td>
 	</tr>
+	</tbody>
+	
 </table>
+
 (il y a 1 en sortie si une des deux entrées est à 1, et uniquement une seule) <br><br>
 
      <img src="photos portes logiques/XNOR.png">
 
 NXOR
-<table>
+
+
+<table class = "verite">
+	<thead>
+		<th>A</th>
+		<th>B</th>
+		<th>S</th>
+	</thead>
+	<tbody>
 	<tr>
-		<td>A</td>
-		<td>B</td>
-		<td>S</td>
+		<td>0</td>
+		<td>0</td>
+		<td>1</td>
 	</tr>
 	<tr>
 		<td>0</td>
-		<td>0</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>0</td>
 		<td>1</td>
 		<td>0</td>
 	</tr>
@@ -245,19 +275,29 @@ NXOR
 		<td>1</td>
 		<td>1</td>
 	</tr>
+	</tbody>
+	
 </table>
+
 (inverse de la porte XOR)<br><br>
 
-</p>
 
 
 
-<p>
+
+
 Bien sûr, une porte peut comporter plus d’entrées (à part la porte NO). Il y aura moins de chances qu’une porte AND à 3 entrées laisse passer le courant (⅛) qu’une porte AND à 2 entrées (¼).
 
 … Mais les portes NAND et NOR ont quelque chose de particulier. On peut recréer toutes les autres portes rien qu’avec celles-ci, elles sont universelles. Ce qui est bien pratique puisqu’il est plus facile de créer des portes en chaînes plutôt que d’en faire de pleins de types différents.
 <img src="photos portes logiques/univers.png" alt="toutes les portes en NAND">
 
-</p>
+</div>
+</td>
+</table>
+
+<footer>
+    <div><a href ="./index.html">↤Page Précédente </a></div>
+    <div><a href ="./index.html">Page Suivante↦</a></div>
+    </footer>
 </body>
 </html>
