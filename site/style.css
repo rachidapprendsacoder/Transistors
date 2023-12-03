@@ -1,0 +1,154 @@
+body {
+    background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 0; /*space from content and border*/
+    border-width: thin;
+    overflow-y: visible;
+    display:block;
+}
+alg{
+    flex-direction:row;
+    display: flex;
+}
+n{
+    box-shadow: 0px -2px 0px rgb(50,50,50);
+    width: min-content;
+    border: 0px 0px 0px 0x;
+    margin: 0px 0px 0px 0x;
+    padding:4px 0px 0px 0px;
+    flex-direction:row;
+    display: flex;
+}
+y{
+    width: min-content;
+    border: 0px 0px 0px 0x;
+    margin: 0px 0px 0px 0x;
+    padding:4px 0px 0px 0px;
+    flex-direction:row;
+    display: flex;
+}
+xor{
+    font-size:1.4rem;
+}
+onglet{
+    font-weight:bold;
+    font-size:1.4rem;
+    line-height:1px;
+}
+table.verite{
+    background: white;
+    border-color: black;
+    border: 1px solide black;
+    display : block;
+    text-align:center;
+}
+table.verite > th {
+    border-color: black;
+    border: 1px solide black;
+    display : block;
+    text-align:center;
+}
+table.verite > td {
+    border-color: black;
+    border: 1px solide black;
+    display : block;
+    text-align:center;
+}
+.norm-img{
+    block-size: 50rem;
+    display : block;
+}
+table.verite {
+    font-size:1.5rem;
+    border-color: grey;
+    width: max-content;
+    border-radius: 10px;
+    display: block;
+}
+table.verite > thead{
+    margin:0%;
+
+    background-color: rgb(219, 218, 167);
+}
+
+footer{
+    color: red; 
+    background-color: rgb(65, 65, 50);
+    justify-content: space-around;
+    box-shadow: 0px -3px 5px rgb(65, 65, 50);
+    width: 100vw;
+    padding:10px;
+    height: 5rem;
+    display: flex;
+}
+h1{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    letter-spacing: 3px;
+    text-align: center;
+
+    font-size: 3rem;
+}
+
+.norm1{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 2px;
+    display : block;
+}
+.norm2{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 1px;
+    display : block;
+}
+
+#table-principale{
+    background: rgb(240, 248, 255);
+    width: 100%;
+    border-width: none;
+    margin:0px;
+
+}
+#hypertext-interface{
+    width: 200px;
+    background: rgba(200, 170, 190,0.9);
+    border-radius:0px 10px 10px 0px;
+    height: 100%;
+    vertical-align:top;
+    margin: 3px;
+    box-shadow: -5px 0px 0px rgba(200, 170, 190,0.9);
+    font-size:2rem;
+    padding: 1rem;
+}
+
+#contenu{
+    border-radius: 25px;
+    margin: 10px; 
+    padding: 20px;
+    width: 70vw;
+    background: rgba(240, 248, 255,1);
+    float: left;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    scroll-behavior: smooth;
+}
+header{
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgb(217, 216, 201);
+    justify-content: space-around;
+    text-shadow: 0px 2px 5px black;
+    display: flex;
+    background-color: rgb(217, 216, 201);
+    text-align: center;
+}
+a{
+    color: black;
+    font-size: 1.3rem;
+}
