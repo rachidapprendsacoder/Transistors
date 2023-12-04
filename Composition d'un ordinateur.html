@@ -27,11 +27,11 @@
             </td>
 			
 			<td id="contenu">
-<h1>LES ORDINATEURS</h1>
+<h1>Architecture de von Neumann</h1>
 <div class = "norm1">	
 
 &nbsp; Le premier des processeurs, l'Intel 4004, a été commercialisé en 1971 et était composé de près de 2 250 transistors. <br>
-D’après la loi de Moore, le nombre de transistors dans un processeur double tous les 2 ans, et aujourd’hui leur nombre est impressionnant, plusieurs dizaines de milliards pour certains appareils.
+D’après la loi de Moore, la finesse de gravure des transistors dans un processeur double tous les 2 ans, et aujourd’hui leur nombre est impressionnant, plusieurs dizaines de milliards pour certains appareils.
 
 
 Dans un processeur, il y a de la mémoire cache (quelques Mo, plus pratique car plus rapide que la mémoire RAM), l'Unité Arithmétique et Logique (c'est elle en fait qui s'occupe de tous 
@@ -39,6 +39,38 @@ les calculs que le processeur est capable de faire) et l'Unité de Contrôle. Ce
 exécuter. Cette instruction machine est constituée des champs de code opération et du champ opérande. Elle joue le rôle de chef au sein du processeur, décode l'instruction à exécuter, 
 etc. Au sein de l'UAL, il y a un registre accumulateur qui fait office de mémoire à court terme (il sert à stocker les résultats intermédiaires de calculs). Le processeur est relié à l'exterieur 
 grâce aux entrées et aux sorties de celui-ci. Le microprocesseur est également relié à la RAM (Random Access Memory), mémoire plus importante (plusieurs Go) mais plus lente niveau lecture. 
+<br><br><br>
+    <img src="photos composition ordinateur/arch_von_neu.gif" style="width: 70%">
+<br><br><br><br>
+
+
+<h2>Évolution de la fréquence d'horloge (en bleu foncé) du CPU au fil du temps :</h2>
+
+        <img src="photos composition ordinateur/evolution.jpg" style="width: 70%">
+
+<p>Le graphique présenté ci-dessus reflète une tendance marquante à partir de l'année 2006 :
+    la stagnation de la fréquence d'horloge du CPU. Cette pause dans l'augmentation de la
+    fréquence est attribuable à une contrainte physique fondamentale : à mesure que la
+    fréquence d'horloge d'un CPU augmente, la chaleur générée par celui-ci s'accroît
+    également de manière significative. Refroidir efficacement le CPU devenait une tâche
+    de plus en plus complexe, incitant les fabricants de microprocesseurs, notamment Intel
+    et AMD, à abandonner la course effrénée à l'augmentation de la fréquence d'horloge.
+    À la place, ils ont opté pour une nouvelle stratégie.
+
+L'approche traditionnelle d'optimisation par l'augmentation de la fréquence d'horloge
+    étant limitée, les fabricants ont cherché d'autres moyens d'améliorer les performances
+    des CPU. Ils ont ainsi décidé de privilégier l'augmentation du nombre de cœurs présents
+    sur un CPU. Mais qu'est-ce qu'un cœur dans le contexte d'un microprocesseur ? Un cœur,
+    au sein d'un microprocesseur, se compose principalement d'une Unité Arithmétique et
+    Logique (UAL), de registres (R0, R1...) et d'une unité de commande, lui permettant
+    d'exécuter des programmes de manière autonome. Grâce à l'évolution technologique
+    permettant d'intégrer toujours plus de transistors sur une surface donnée, il est
+    désormais possible d'avoir plusieurs cœurs sur une même puce, là où un seul cœur
+    était la norme par le passé. Cette transition vers les processeurs multi-cœurs a été
+    adoptée dans les ordinateurs grand public à partir de 2006. Actuellement, le
+    marché propose des CPU dotés de jusqu'à 64 cœurs. Même les smartphones intègrent des
+    microprocesseurs multi-cœurs, comme le Snapdragon 845 qui en possède 8.
+   </p>
 
 <h1>Hardware : Pourquoi monter soi-même son ordinateur ?</h1>
 <p>
