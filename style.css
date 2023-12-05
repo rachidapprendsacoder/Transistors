@@ -1,5 +1,5 @@
 body {
-  
+    background-image: url("./assets/bg.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -10,28 +10,88 @@ body {
     display:block;
 }
 alg{
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(213, 230, 245);
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+    border: 5px solid rgb(114, 77, 77)484;
+    margin:1rem;
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px 8px 8px 8px;
+    justify-content: center;
     flex-direction:row;
     display: flex;
 }
+
+xor{
+    font-size: 0.8em;
+}
+para{
+    background-color: rgb(240, 240, 240);
+    margin:0px;
+    width: 50vw;
+    padding:0px 2em 0px 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.5rem;
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+}
+para>button{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    background-color: rgb(71, 81, 90);
+    font-size: 0.8em;
+    margin:1rem;
+    width:5rem;
+    height:2rem;
+    justify-content: center;
+    flex-direction:row;
+
+    display: flex;
+}
+roul{
+    
+    overflow-x: scroll;
+    width: 50vw;
+    background-color: rgb(240, 240, 240);
+    margin:0px 0px 0.5rem 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px 8px 0px 8px;
+    height: 5rem;
+    justify-content: left;
+    flex-direction:row;
+    display: flex;
+}
+roul>button{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    background-color: rgb(71, 81, 90);
+    font-weight: bold;
+    font-size: 0.8em;
+    margin:10px;
+    width:5rem;
+    height: 2.1rem;
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+}
+
 n{
     box-shadow: 0px -2px 0px rgb(50,50,50);
+    font-size: 0.92em;
     width: min-content;
-    border: 0px 0px 0px 0x;
-    margin: 0px 0px 0px 0x;
+    min-width: 3px;
+    border: 0px 2px 0px 2px;
+    margin: 0px 0px 0px 0;
     padding:4px 0px 0px 0px;
     flex-direction:row;
     display: flex;
-}
-y{
-    width: min-content;
-    border: 0px 0px 0px 0x;
-    margin: 0px 0px 0px 0x;
-    padding:4px 0px 0px 0px;
-    flex-direction:row;
-    display: flex;
-}
-xor{
-    font-size:1.4rem;
 }
 onglet{
     font-weight:bold;
@@ -39,9 +99,14 @@ onglet{
     line-height:1px;
 }
 table.verite{
+    
     background: white;
     border-color: black;
     border: 1px solide black;
+    margin:0vw auto 0vw ;
+    font-size:2rem;
+    width: max-content;
+    border-radius: 10px;
     display : block;
     text-align:center;
 }
@@ -61,13 +126,7 @@ table.verite > td {
     block-size: 50rem;
     display : block;
 }
-table.verite {
-    font-size:1.5rem;
-    border-color: grey;
-    width: max-content;
-    border-radius: 10px;
-    display: block;
-}
+
 table.verite > thead{
     margin:0%;
 
@@ -108,7 +167,6 @@ h1{
     display : block;
 }
 
-
 #table-principale{
     background: rgb(240, 248, 255);
     width: 100%;
@@ -139,6 +197,10 @@ h1{
     overflow-y: auto;
     border: 1px solid #ccc;
     scroll-behavior: smooth;
+    min-height: 100vh;
+}
+#cit{
+	font-family: 'Copperplate', Papyrus, fantasy;
 }
 header{
     padding: 10px;
@@ -152,8 +214,4 @@ header{
 a{
     color: black;
     font-size: 1.3rem;
-}
-
-#cit{
-	font-family: 'Copperplate', Papyrus, fantasy;
 }
