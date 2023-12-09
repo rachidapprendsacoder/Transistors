@@ -1,0 +1,227 @@
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Composition d'un ordinateur</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div style="background-image: url('photos composition ordinateur/bkg.jfif');"> 
+
+
+<header> <a href="Page d'accueil.html">DOCUMENTATION </a>    <a href = "Editeur.html">EDITEUR BOOLEEN</a>
+        </header>
+<table  id="tabl-principale">
+            <td id = "hypertext-interface"> 
+                <onglet>• Documentation :</onglet>
+                <div>&nbsp; <a href="Page d'accueil.html">Accueil</a><br>
+                    &nbsp; <a href="Les Transistors.html" >Les Transistors</a><br>
+                    &nbsp; <a href="Les portes logiques.html">Portes Logiques</a><br>
+                    &nbsp; <a href="Algèbre de Boole.html">Algèbre de Boole</a><br>
+                    &nbsp; <a href="Composition d'un ordinateur.html">Les Ordinateurs</a><br><hr>
+                </div>
+                <onglet>• Editeur Booléen :</onglet>
+                <div>&nbsp; <a href = "Editeur.html">Editeur Booléen</a><br>
+				</div>
+            </td>
+			
+			<td id="contenu">
+<h1>Architecture de von Neumann</h1>
+<div class = "norm1">	
+
+&nbsp; Le premier des processeurs, l'Intel 4004, a été commercialisé en 1971 et était composé de près de 2 250 transistors. <br>
+D’après la loi de Moore, la finesse de gravure des transistors dans un processeur double tous les 2 ans, et aujourd’hui leur nombre est impressionnant, plusieurs dizaines de milliards pour certains appareils.
+
+
+Dans un processeur, il y a de la mémoire cache (quelques Mo, plus pratique car plus rapide que la mémoire RAM), l'Unité Arithmétique et Logique (c'est elle en fait qui s'occupe de tous 
+les calculs que le processeur est capable de faire) et l'Unité de Contrôle. Cette dernière est elle-même composée de registres permettant le stockage à court terme de l'instruction machines  à 
+exécuter. Cette instruction machine est constituée des champs de code opération et du champ opérande. Elle joue le rôle de chef au sein du processeur, décode l'instruction à exécuter, 
+etc. Au sein de l'UAL, il y a un registre accumulateur qui fait office de mémoire à court terme (il sert à stocker les résultats intermédiaires de calculs). Le processeur est relié à l'exterieur 
+grâce aux entrées et aux sorties de celui-ci. Le microprocesseur est également relié à la RAM (Random Access Memory), mémoire plus importante (plusieurs Go) mais plus lente niveau lecture. 
+<br><br><br>
+    <img src="photos composition ordinateur/arch_von_neu.gif" style="width: 70%">
+<br><br><br><br>
+
+
+<h2>Évolution de la fréquence d'horloge (en bleu foncé) du CPU au fil du temps :</h2>
+
+        <img src="photos composition ordinateur/evolution.jpg" style="width: 50%">
+
+<p>Le graphique présenté ci-dessus reflète une tendance marquante à partir de l'année 2006 :
+    la stagnation de la fréquence d'horloge du CPU. Cette pause dans l'augmentation de la
+    fréquence est attribuable à une contrainte physique fondamentale : à mesure que la
+    fréquence d'horloge d'un CPU augmente, la chaleur générée par celui-ci s'accroît
+    également de manière significative. Refroidir efficacement le CPU devenait une tâche
+    de plus en plus complexe, incitant les fabricants de microprocesseurs, notamment Intel
+    et AMD, à abandonner la course effrénée à l'augmentation de la fréquence d'horloge.
+    À la place, ils ont opté pour une nouvelle stratégie.
+
+L'approche traditionnelle d'optimisation par l'augmentation de la fréquence d'horloge
+    étant limitée, les fabricants ont cherché d'autres moyens d'améliorer les performances
+    des CPU. Ils ont ainsi décidé de privilégier l'augmentation du nombre de cœurs présents
+    sur un CPU. Mais qu'est-ce qu'un cœur dans le contexte d'un microprocesseur ? Un cœur,
+    au sein d'un microprocesseur, se compose principalement d'une Unité Arithmétique et
+    Logique (UAL), de registres (R0, R1...) et d'une unité de commande, lui permettant
+    d'exécuter des programmes de manière autonome. Grâce à l'évolution technologique
+    permettant d'intégrer toujours plus de transistors sur une surface donnée, il est
+    désormais possible d'avoir plusieurs cœurs sur une même puce, là où un seul cœur
+    était la norme par le passé. Cette transition vers les processeurs multi-cœurs a été
+    adoptée dans les ordinateurs grand public à partir de 2006. Actuellement, le
+    marché propose des CPU dotés de jusqu'à 64 cœurs. Même les smartphones intègrent des
+    microprocesseurs multi-cœurs, comme le Snapdragon 845 qui en possède 8.
+   </p>
+<br>
+<h1>Hardware : Pourquoi monter soi-même son ordinateur ?</h1>
+<p>
+    Monter son propre ordinateur présente plusieurs avantages.
+    <ol>
+    <li>Tout d'abord, il s'agit d'une activité enrichissante qui permet de mieux comprendre le fonctionnement interne d'un ordinateur.
+        Bien qu'elle puisse sembler complexe initialement, elle demeure une tâche réalisable</li>
+    <li>Il s'agit également d'une activité amusante, beaucoup de gens trouvent gratifiant de construire quelque chose de fonctionnel de leurs propres mains. Monter son ordinateur peut créer
+        un sentiment de fierté et de satisfaction personnelle.</li>
+    <li>En construisant votre propre ordinateur, vous avez un contrôle total sur les composants que vous utilisez. Vous pouvez choisir des pièces spécifiques en fonction de vos besoins,
+        de votre budget et de vos préférences.</li>
+    <li>Les ordinateurs pré-assemblés sont souvent imprécis sur les composants utilisés dans la configuration, vous pouvez donc vous retrouver surpris en découvrant une alimentation
+        dites "no-name"(qui a des origines inconnues), une carte-graphique d'une marque différente que celle indiquée...</li>
+    <li>Monter son propre PC est aussi une façon astucieuse de réduire la facture finale et de ménager votre porte-monnaie</li>
+    <li>Enfin, on peut mettre en parallèle les bénéfices d'assembler son ordinateur avec le fait de concocter son propre couscous ou d'opter pour une version prête à l'emploi du supermarché.
+        Si le premier nécessite un investissement temporel supplémentaire, il se révèle plus gratifiant en termes de qualité et d'économies.
+        En revanche, le second pourrait renfermer des ingrédients parfois extravagants et toujours source de surprises, pouvant parfois conduire à un résultat débectant.</li>
+
+</ol>
+
+<h1>Hardware : Quels sont les différents composants ?</h1>
+
+<ol>
+<h2><li>Le CPU</li></h2>
+<img src="photos composition ordinateur/cpu.jpg" style="width: 55%">
+<h2><li>Le ventirad</li></h2>
+<img src="photos composition ordinateur/ventirad.jpg" style="width: 50%">
+<h2>ou le watercooling</h2>
+<img src="photos composition ordinateur/watercooling.jpg" style="width: 50%">
+<h2><li>La carte mère</li></h2>
+    <p>L'échange de données entre différentes composantes d'un ordinateur est permis grâce à la carte mère, il nécessite un système dédié appelé bus. Sans entrer dans les détails, on peut identifier trois catégories principales de bus :
+<ol>
+<li>Le bus d'adresse, chargé de faire circuler des adresses (telles que l'adresse d'une donnée à extraire de la mémoire).</li>
+<li>Le bus de données, destiné à faire circuler les données elles-mêmes.</li>
+<li>Le bus de contrôle, qui spécifie le type d'action à entreprendre (par exemple, écrire une donnée en mémoire ou lire une donnée depuis la mémoire).</li>
+    </p>
+</ol>
+<img src="photos composition ordinateur/carte mere.png" style="width: 50%">
+<h2><li>La RAM</li></h2>
+<img src="photos composition ordinateur/barrettes ram.jpg" style="width: 50%">
+<h2><li>La carte graphique</li></h2>
+<img src="photos composition ordinateur/carte graphique.jpg" style="width: 50%">
+<h2><li>SSD SATA</li></h2>
+<img src="photos composition ordinateur/SSD SATA.jpg" style="width: 50%">
+<h2><li>ou SSD NVMe</li></h2>
+<img src="photos composition ordinateur/SSD NVMe.jpg" style="width: 50%">
+<h2><li>Le boîtier</li></h2>
+    <p>Il permet de limiter les dégâts que peuvent causer la poussière sur le système de refroidissement. Il permet également d'améliorer le flux d'air et donc de réduire le bruit, d'organiser les composants et de rehausser son apparence</p>
+<img src="photos composition ordinateur/boitier.png" style="width: 50%">
+<h2><li>L'alimentation</li></h2>
+    <p>Elle permet de transformer le courant alternatif en courant continu pour enfin le distribuer aux autres composants.</p>
+<img src="photos composition ordinateur/alimentation.jpg" style="width: 50%">
+
+</ol>
+<br>
+<h1>Hardware : Comment choisir ses composants d'ordinateurs ?</h1>
+<p>
+
+    <ol>
+        <li><strong>Définissez votre objectif d'utilisation :</strong>
+            <ul>
+                <li>Quelles seront les principales activités sur votre ordinateur (jeux, montage vidéo, programmation, travail de bureau, etc.) ?</li>
+                <li>Cela vous aidera à déterminer les composants les mieux adaptés à vos besoins.</li>
+            </ul>
+        </li>
+
+        <li><strong>Fixez votre budget :</strong>
+            <ul>
+                <li>Déterminez le montant que vous êtes prêt à investir dans votre ordinateur. Cela vous aidera à faire des choix éclairés lors de la sélection des composants.</li>
+            </ul>
+        </li>
+
+        <li><strong>Choisissez le processeur (CPU) :</strong>
+            <ul>
+                <li>Sélectionnez un processeur adapté à votre usage.
+                Si vous faites des activités dites "multitâches" comme le montage vidéo, il faudra privilégier un processeur avec un nombre important de cœurs et de threads alors que pour les jeux vidéos, ils ne seront pas nécessaires, ce sera plus particulièrement sa fréquence qui impactera ses performances.</li>
+            </ul>
+        </li>
+
+    <li><strong>Refroidissement :</strong>
+            <ul>
+                <li>Le choix du refroidissement du processeur est crucial, un processeur mal refroidit est un processeur bridé. Occasionnellement, lors de l'acquisition d'un processeur, un ventirad peut être inclus. Néanmoins, si vous ambitionnez d'avoir un système de refroidissement à la fois silencieux et performant, il peut être judicieux de vous orienter vers l'achat d'un ventirad ou même d'envisager une solution de watercooling.
+                    Le choix du watercooling est souvent motivé par des considérations esthétiques, offrant non seulement une efficacité thermique mais également une touche moderne et visuellement attrayante à votre configuration. Le ventirad lui sera tout aussi efficace, mais moins onéreux</li>
+            </ul>
+        </li>
+
+        <li><strong>Sélectionnez la carte mère :</strong>
+            <ul>
+                <li>Assurez-vous que la carte mère est compatible avec le processeur choisi. Vérifiez également le type et le nombre de ports d'extension, la connectivité, et les fonctionnalités comme le Wi-Fi intégré si nécessaire.</li>
+            </ul>
+        </li>
+
+        <li><strong>Choisissez la mémoire vive (RAM) :</strong>
+            <ul>
+                <li>Optez pour une quantité de RAM suffisante pour vos besoins. Pour du jeu, 16 Go minimum seront nécessaires. Ses critères de choix sont : sa fréquence, son CAS, la présence de dissipateur de chaleur, son esthétique...</li>
+            </ul>
+        </li>
+
+        <li><strong>Sélectionnez le stockage :</strong>
+            <ul>
+                <li>Choisissez un SSD pour le stockage pour des performances rapides. Il en existe deux types : les SATA et les NVMe. Les SSD NVMe, plus rapides, sont généralement recommandés pour les charges de travail intensives, tandis que les SSD SATA peuvent suffire pour un usage général.</li>
+            </ul>
+        </li>
+
+        <li><strong>Choisissez la carte graphique (GPU) :</strong>
+            <ul>
+                <li>Si vous jouez à des jeux gourmands en graphismes, investissez dans une bonne carte graphique, pour du gaming, ce composant sera le plus onéreux. Je vous invite à regarder des tests de différentes cartes graphiques sur vos jeux favoris pour en choisir une adaptée à vos usages.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Alimentation électrique :</strong>
+            <ul>
+                <li>Assurez-vous que l'alimentation est suffisamment puissante pour tous vos composants. Optez pour une alimentation de qualité, provenant de fabricants réputés. Une alimentation de mauvaise qualité peut entraîner des pannes et même endommager vos composants. En ce qui concerne l'efficacité énergétique, les alimentations certifiées 80 PLUS sont conçues pour optimiser la conversion d'énergie, réduisant ainsi la consommation d'électricité et la chaleur générée.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Boîtier :</strong>
+            <ul>
+                <li>Optez pour un boîtier capable d'accueillir l'ensemble de vos composants, doté de ventilateurs performants et d'une façade permettant de prévenir la surchauffe en favorisant un flux d'air conséquent. Le choix du boîtier devrait également prendre en compte son esthétique pour une intégration harmonieuse dans votre configuration.</li>
+            </ul>
+        </li>
+
+
+        <li><strong>Recherchez les avis et tests :</strong>
+            <ul>
+                <li>Consultez des avis en ligne et des tests de performance pour les composants spécifiques que vous envisagez. Cela vous donnera une idée plus précise de leur qualité et de leurs performances. Je vous invite également à vous renseigner auprès d'autres sources pour trouver d'autres informations et approfondir le sujet.</li>
+                <li>Différents sites font des propositions de configurations. Il peut être intéressant d'y jetter un coup d'œil. ex: <a href="https://www.fnk-hardware.fr/pc-gamer/"> fnk config</a></li>
+            </ul>
+        </li>
+    </ol>
+
+<h2>Exemples de pc montés:</h2>
+
+<h3>boîtier fait maison:</h3><img src="photos composition ordinateur/pc du frerot.jpg" alt="PC de Nicolas aidé par Père-Grand" style="width: 100%">
+<h3>pc mini-ITX:</h3><img src="photos composition ordinateur/pc mini_itx.png" style="width: 100%">
+<h3>watercooling custom:</h3><img src="photos composition ordinateur/watercooling custom.jpg" style="width: 100%">
+
+<h2>Image bonus :</h2>
+<img src="photos composition ordinateur/SSD demonte.jpg" style="width: 100%">
+
+<h1>Conclusion :</h1>
+<p>La création de son propre PC offre une expérience accessible et enrichissante, ouvrant la voie à des possibilités infinies. En prenant en main sa conception, vous avez la liberté de personnaliser chaque composant selon vos besoins spécifiques, que ce soit pour le gaming, la productivité ou d'autres applications. Cette démarche permet non seulement d'obtenir une machine parfaitement adaptée à vos exigences, mais aussi d'explorer et d'apprécier la diversité des options disponibles sur le marché des composants informatiques. La construction d'un PC sur mesure représente ainsi une opportunité unique de fusionner technologie et créativité, offrant une satisfaction personnelle tout en répondant de manière optimale à vos attentes.</p>
+
+
+</div>
+</td>
+</table>
+<footer>
+    <div><a href="Algèbre de Boole.html">↤Page Précédente </a></div>
+    <div><a href = "Editeur.html">Page Suivante↦</a></div>
+    </footer>
+</body>
+</html>
