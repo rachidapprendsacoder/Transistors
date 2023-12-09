@@ -1,0 +1,217 @@
+body {
+    background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 0; /*space from content and border*/
+    border-width: thin;
+    overflow-y: visible;
+    display:block;
+}
+alg{
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(213, 230, 245);
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+    border: 5px solid rgb(114, 77, 77)484;
+    margin:1rem;
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px 8px 8px 8px;
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+}
+
+xor{
+    font-size: 0.8em;
+}
+para{
+    background-color: rgb(240, 240, 240);
+    margin:0px;
+    width: 50vw;
+    padding:0px 2em 0px 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.5rem;
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+}
+para>button{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    background-color: rgb(71, 81, 90);
+    font-size: 0.8em;
+    margin:1rem;
+    width:5rem;
+    height:2rem;
+    justify-content: center;
+    flex-direction:row;
+
+    display: flex;
+}
+roul{
+    
+    overflow-x: scroll;
+    width: 50vw;
+    background-color: rgb(240, 240, 240);
+    margin:0px 0px 0.5rem 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px 8px 0px 8px;
+    height: 5rem;
+    justify-content: left;
+    flex-direction:row;
+    display: flex;
+}
+roul>button{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    background-color: rgb(71, 81, 90);
+    font-weight: bold;
+    font-size: 0.8em;
+    margin:10px;
+    width:5rem;
+    height: 2.1rem;
+    justify-content: center;
+    flex-direction:row;
+    display: flex;
+}
+
+n{
+    box-shadow: 0px -2px 0px rgb(0, 0, 0);
+    font-size: 0.92em;
+    width: min-content;
+    min-width: 3px;
+    border: 0px 2px 0px 2px;
+    margin: 0px 0px 0px 0;
+    padding:4px 0px 0px 0px;
+    flex-direction:row;
+    display: flex;
+}
+onglet{
+    font-weight:bold;
+    font-size:1.4rem;
+    line-height:1px;
+}
+table.verite{
+    
+    background: white;
+    border-color: black;
+    border: 1px solide black;
+    margin:0vw auto 0vw ;
+    font-size:2rem;
+    width: max-content;
+    border-radius: 10px;
+    display : block;
+    text-align:center;
+}
+table.verite > th {
+    border-color: black;
+    border: 1px solide black;
+    display : block;
+    text-align:center;
+}
+table.verite > td {
+    border-color: black;
+    border: 1px solide black;
+    display : block;
+    text-align:center;
+}
+.norm-img{
+    block-size: 50rem;
+    display : block;
+}
+
+table.verite > thead{
+    margin:0%;
+
+    background-color: rgb(219, 218, 167);
+}
+
+footer{
+    color: red; 
+    background-color: rgb(65, 65, 50);
+    justify-content: space-around;
+    box-shadow: 0px -3px 5px rgb(65, 65, 50);
+    width: 100vw;
+    padding:10px;
+    height: 5rem;
+    display: flex;
+}
+h1{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    letter-spacing: 3px;
+    text-align: center;
+
+    font-size: 3rem;
+}
+
+.norm1{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 2px;
+    display : block;
+}
+.norm2{
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 1px;
+    display : block;
+}
+
+#table-principale{
+    background: rgb(240, 248, 255);
+    width: 100%;
+    border-width: none;
+    margin:0px;
+
+}
+#hypertext-interface{
+    width: 200px;
+    background: rgba(200, 170, 190,0.9);
+    border-radius:0px 10px 10px 0px;
+    height: 100%;
+    vertical-align:top;
+    margin: 3px;
+    box-shadow: -5px 0px 0px rgba(200, 170, 190,0.9);
+    font-size:2rem;
+    padding: 1rem;
+}
+
+#contenu{
+    border-radius: 25px;
+    margin: 10px; 
+    padding: 20px;
+    width: 70vw;
+    background: rgba(240, 248, 255,1);
+    float: left;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+#cit{
+	font-family: 'Copperplate', Papyrus, fantasy;
+}
+header{
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgb(217, 216, 201);
+    justify-content: space-around;
+    text-shadow: 0px 2px 5px black;
+    display: flex;
+    background-color: rgb(217, 216, 201);
+    text-align: center;
+}
+a{
+    color: black;
+    font-size: 1.3rem;
+}
